@@ -1,0 +1,39 @@
+/* src/styles/Card.css */
+.card {
+    background: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .confetti {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    background: url('https://www.pngkit.com/png/full/78-789004_confetti-png-transparent-background-confetti-png.png') repeat;
+    opacity: 0.2;
+    animation: confetti 2s infinite ease-in-out;
+  }
+  
+  @keyframes confetti {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    50% {
+      transform: rotate(180deg) translateY(10px);
+    }
+    100% {
+      transform: rotate(360deg) translateY(0);
+    }
+  }
+  
